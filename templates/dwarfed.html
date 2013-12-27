@@ -1,1 +1,9 @@
-The url is <a href="{{ url }}">{{ url }}</a>
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <h1>Ye queste ends</h1>
+    <img src="http://openclipart.org/people/tzunghaor/dwarf.svg" id="dwarf">
+    <a class="dwarfr" href="{{ url }}">{{ url }}</a>
+</section>
+{% endblock %}

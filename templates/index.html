@@ -1,9 +1,19 @@
-<form action="" method="POST">
-{{ form.hidden_tag() }}
-{{ form.url }}
-{{ form.submit }}
-</form>
+{% extends "base.html" %}
 
-{% for error in form.errors %}
-<p>{{ error }}</p>
-{% endfor %}
+{% block content %}
+<section>
+    <h1>Dwarf your url</h1>
+    <img src="http://openclipart.org/people/tzunghaor/dwarf.svg" id="dwarf">
+    <form action="" method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.url }}
+    {{ form.submit }}
+    </form>
+    
+    {% for field, errors in form.errors|dictsort %}
+    {% for error in errors %}
+    <p class="error">{{ error }}</p>
+    {% endfor %}
+    {% endfor %}
+</section>
+{% endblock %}

@@ -1,0 +1,42 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/css3";
+@import "compass/css3/shared";
+@import url(http://fonts.googleapis.com/css?family=MedievalSharp);
+
+html {
+    background:
+    linear-gradient(45deg, #92baac 45px, transparent 45px)64px 64px,
+    linear-gradient(45deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
+    linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
+    background-color:#e1ebbd;
+    background-size: 128px 128px;
+}
+
+section {
+    background-color: #fff;
+    padding: 1em;
+    @include border-radius;
+    @include box-shadow;
+    text-align: center;
+    margin: 0 auto;
+    width: 30em;
+    
+    h1 {
+        font-family: 'MedievalSharp', cursive;
+    }
+
+    img#dwarf{
+        height: 5em;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 2em;
+    }
+
+    .error {
+        color: red;
+    }
+}
