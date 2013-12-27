@@ -1,0 +1,9 @@
+<form action="" method="POST">
+{{ form.hidden_tag() }}
+{{ form.url }}
+{{ form.submit }}
+</form>
+
+{% for error in form.errors %}
+<p>{{ error }}</p>
+{% endfor %}
