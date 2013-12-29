@@ -1,3 +1,4 @@
 *.pyc
 env
-.sass-cache
+.sass-cache/
+*.scssc

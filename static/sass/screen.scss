@@ -5,6 +5,8 @@
 
 @import "compass/css3";
 @import "compass/css3/shared";
+@import "compass/typography/links/unstyled-link";
+@import "sassy-buttons";
 @import url(http://fonts.googleapis.com/css?family=MedievalSharp);
 
 html {
@@ -38,5 +40,12 @@ section {
 
     .error {
         color: red;
+    }
+
+    #again {
+        @include unstyled-link;
+        @include sassy-button;
+        @include sassy-button-gradient("flat", #92baac);
+        margin-top: 1em;
     }
 }
