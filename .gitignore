@@ -1,4 +1,7 @@
 *.pyc
-env
+env/
+
+css/
+*.css
+
 .sass-cache/
-*.scssc
